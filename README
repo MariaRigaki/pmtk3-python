@@ -1,1 +1,8 @@
 pmtk3 demo files from Octave to python
+
+Required libraries
+- Numpy
+- Scipy
+- Matplotlib
+- Scikit-learn
+- Pandas
