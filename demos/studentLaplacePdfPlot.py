@@ -17,20 +17,14 @@ sigma = 1
 dist = stats.t(dof)
 f2 = dist.pdf(xs)
 
-
 # Laplace distribution
-b = np.sqrt(v/2);
-
-#dist = stats.laplace()
-#f3 = dist.pdf(xs) # no b?
-
+b = np.sqrt(v/2)
 f3 = 1/(2 * b) * np.exp(-np.abs(xs - mu) / b)
 
 
 legend_str = ['Gauss', 'Student', 'Laplace']
 
 ax1 = plt.subplot(121)
-
 plt.plot(xs, f, 'k:', linewidth=3.0)
 plt.plot(xs, f2, 'b--', linewidth=2.0)
 plt.plot(xs, f3, 'r-', linewidth=2.0)
